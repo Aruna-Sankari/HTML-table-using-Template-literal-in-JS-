@@ -1,0 +1,40 @@
+<html>
+<head>
+<title>product card with literal on table</title>
+<style>
+th{
+background-color:bisque;
+}
+td{
+background-color:pink;
+}
+table{
+border-collapse:collapse;
+}
+</style>
+</head>
+<body>
+<script>
+let id=1;
+let  name="Kurti";
+let category="Women's daily Wear Kurtis";
+let price=478;
+let color="blue";
+let quantity=5;
+let result=' ';
+result +=`
+<table  border="all" cellspacing="10px" cellpadding="10px" align="center">
+<caption>Card Details</caption>
+<br>
+<tr><th>Id</th><td>${ id}</td></tr>
+<tr><th>Product Name</th><td>${name}</td></tr>
+<tr><th>Product Category</th><td>${category}</td></tr>
+<tr><th>Product Price</th><td>${price}</td></tr>
+<tr><th>Product Color</th><td>${color}</td></tr>
+<tr><th>Product Quantity</th><td>${quantity}</td></tr>
+</table>`
+console.log(result);
+document.body.innerHTML=result;
+</script>
+</body>
+</html>
